@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates | Editvids</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f4;
+            padding: 2rem;
+            color: #333;
+        }
+
+        .template-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .template-box {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        .home-icon {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .home-icon img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+            opacity: 0.85;
+            transition: opacity 0.3s ease;
+        }
+
+        .home-icon img:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="home-icon" title="Go to Home">
+        Home<img src="images/home-icon.png" alt="Home Icon">
+    </a>
+
+    <h2>Explore Our Video Templates</h2>
+    <p>We offer a variety of pre-designed editing styles to match your content. Choose the one that fits your vibe, and
+        we’ll apply it to your uploaded clips!</p>
+
+    <div class="template-gallery">
+        <div class="template-box">
+            <h3>Template 1: Cinematic Intro</h3>
+            <video controls src="/template1.mp4">Your browser does not support the video tag.</video>
+        </div>
+        <div class="template-box">
+            <h3>Template 2: Fast Cut Reels</h3>
+            <video controls src="/template2.mp4">Your browser does not support the video tag.</video>
+        </div>
+        <div class="template-box">
+            <h3>Template 3: Vlog Style</h3>
+            <video controls src="/template3.mp4">Your browser does not support the video tag.</video>
+        </div>
+        <div class="template-box">
+            <h3>Template 4: Highlights in Youtube</h3>
+            <video controls src="/template4.mp4">Your browser does not support the video tag.</video>
+        </div>
+    </div>
+</body>
+
+</html>
